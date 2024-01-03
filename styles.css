@@ -1,0 +1,349 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #000;
+    /* Cor dourada para o background do header */
+    padding: 5px;
+    text-align: center;
+    /* Centraliza o texto dentro do header */
+    border: 2px solid rgb(247, 216, 81);
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+header a {
+    color: #fff;
+    /* Cor preta para os links dentro do header */
+    margin: 0 10px;
+    /* Adiciona um pequeno espaçamento entre os links */
+    padding: 8px 20px;
+    /* Adiciona preenchimento aos botões */
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    /* Adiciona bordas arredondadas aos botões */
+    background: linear-gradient(to right, #800080, #000);
+    /* Gradiente metálico de roxo a dourado */
+    border: 2px solid #fff;
+}
+
+.header-container {
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.left-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.right-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.slider {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Garante que a fita de filme não exiba imagens fora dela */
+}
+
+/* ... (seu código CSS existente) */
+
+
+.slick-prev,
+.slick-next {
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    color: #8a4dff;
+}
+
+.commission,
+#sobre {
+    font-size: 18px;
+    /* Altere o valor conforme necessário */
+}
+
+#sobre,
+#contato,
+footer,
+.portfolio,
+.commission {
+    background: linear-gradient(45deg, #000, #8a4dff);
+    /* Fundo roxo */
+    border: 2px solid rgb(247, 216, 81);
+    /* Borda preta */
+    color: #fff;
+    /* Cor do texto branco */
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    /* Centralizar as seções e o rodapé */
+    border-radius: 10px;
+
+}
+
+/* Adicionando estilos para o menu hamburguer */
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    /* Inicialmente escondido em dispositivos maiores */
+}
+
+.left-menu,
+.right-menu {
+    display: flex;
+}
+
+/* ... (seu código CSS existente) */
+
+.transla {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translator-container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.translate-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Regras de Mídia para Responsividade */
+@media screen and (max-width: 768px) {
+    .transla {
+        margin: 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .translator-container {
+        width: 100%; /* Largura total da tela */
+        margin: 20px 0; /* Margem superior e inferior para separar os tradutores */
+    }
+
+    .image-container img {
+        flex: 0 0 100%;
+        /* Em dispositivos menores, cada imagem ocupa 100% da largura */
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Exibido em dispositivos menores */
+
+    }
+
+    .right-menu {
+        display: none;
+        /* Esconde os menus à direita em dispositivos menores */
+        flex-direction: column;
+        /* Alinha os itens verticalmente */
+        position: fixed;
+        /* Alterado para position: fixed */
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+        /* Garante que o menu esteja acima das imagens */
+        margin-top: 20px;
+    }
+
+    .right-menu a {
+        padding: 20px;
+        text-align: left;
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        box-sizing: border-box;
+        display: block;
+        /* Faz com que os itens apareçam um abaixo do outro */
+    }
+
+    .slider {
+        position: relative;
+        /* Ajusta a posição do slider para permitir sobreposição */
+        z-index: 0;
+        /* Define a camada das imagens */
+    }
+
+    /* Restante do código permanece o mesmo */
+}
+
+/* ... (seu código CSS existente) */
+
+.portfolio {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    flex: 0 0 33.33%;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    font-style: italic;
+    /* Ajuste o tamanho conforme necessário */
+    color: #fff;
+    /* Cor do texto nos botões de navegação */
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Adapte a margem conforme necessário */
+}
+
+.social-buttons a {
+    margin: 0 10px;
+    /* Espaçamento entre os botões */
+}
+
+.social-buttons img {
+    width: 40px;
+    /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 40px;
+    border-radius: 50%;
+    /* Borda circular para os ícones */
+}
+
+/* ... (outros estilos gerais) */
+/* ... (outros estilos gerais) */
+/* ... (outros estilos gerais) */
+/* No seu arquivo CSS social.css */
+/* No seu arquivo CSS social.css */
+.social-icons {
+    /* Seu estilo para a lista de ícones sociais */
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    /* Faz com que os ícones fiquem um ao lado do outro */
+    flex-wrap: wrap;
+    /* Permite que os ícones quebrem para a próxima linha em dispositivos menores */
+}
+
+.social-icons li {
+    margin-right: 10px;
+    /* Adiciona algum espaçamento entre os ícones */
+    margin-bottom: 10px;
+    /* Adiciona espaço abaixo dos ícones para dispositivos menores */
+}
+
+.social-icons a {
+    color: #fff;
+    /* Cor do texto para os ícones */
+    text-decoration: none;
+    display: flex;
+    /* Alinha ícone e texto na vertical em dispositivos menores */
+    align-items: center;
+    /* Alinha ícone e texto na vertical em dispositivos menores */
+}
+
+.social-icons i {
+    margin-right: 5px;
+    /* Adiciona algum espaçamento entre o ícone e o texto */
+}
+
+/* Regras de Mídia para Responsividade */
+@media screen and (max-width: 768px) {
+    .fa-sm {
+        font-size: 0.8em;
+        /* Tamanho menor para ícones em dispositivos menores */
+    }
+}
+
+
+/* Adicione mais estilos conforme necessário */
+
+
+/* Adicione mais estilos conforme necessário */

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+
+    <title>Seu Nome - Portfólio</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="menu-toggle" id="mobile-menu">
+                ☰
+                <!-- Ícone de menu hamburguer -->
+            </div>
+            <div class="left-menu">
+                <a href="#">Home</a>
+            </div>
+            <div class="right-menu">
+                <a href="#commission">Commission</a>
+                <a href="#contato">Contato</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#porfolio">Portfolio</a>
+                <button onclick="changeLanguage('pt')">PT</button>
+                <button onclick="changeLanguage('en')">EN</button>
+                <button onclick="changeLanguage('ja')">JP</button>
+            </div>
+        </div>
+
+    </header>
+    <!-- Adicione este código onde deseja que os botões de rede social apareçam, abaixo do header -->
+    <!-- No seu arquivo HTML -->
+    <!-- ... (outros elementos HTML) -->
+
+    <!-- Novo Header para Redes Sociais com FontAwesome -->
+    <header class="social-header">
+        <ul class="social-icons">
+            <li><a href="link_do_pixiv" target="_blank"><i class="fab fa-pixiv fa-sm"></i> Pixiv</a></li>
+            <li><a href="link_do_deviantart" target="_blank"><i class="fab fa-deviantart fa-sm"></i> DeviantArt</a></li>
+            <li><a href="link_do_instagram" target="_blank"><i class="fab fa-instagram fa-sm"></i> Instagram</a></li>
+            <li><a href="link_do_artstation" target="_blank"><i class="fab fa-artstation fa-sm"></i> ArtStation</a></li>
+            <li><a href="link_do_behance" target="_blank"><i class="fab fa-behance fa-sm"></i> Behance</a></li>
+            <!-- Adicione mais redes sociais conforme necessário -->
+        </ul>
+    </header>
+    <section>
+        <h2 id="portfolio" class="portfolio">Translator</h2>
+        <div class="transla">
+            <div class="translator-container">
+                <h2>Inglês para Português</h2>
+                <input type="text" class="input-text" id="input-en-pt" placeholder="Insira o texto em inglês">
+                <button class="translate-button" id="translate-en-pt" data-source-lang="en" data-target-lang="pt">Traduzir</button>
+                <p id="output-en-pt"></p>
+            </div>
+        
+            <div class="translator-container">
+                <h2>Português para Inglês</h2>
+                <input type="text" class="input-text" id="input-pt-en" placeholder="Insira o texto em português">
+                <button class="translate-button" id="translate-pt-en" data-source-lang="pt" data-target-lang="en">Traduzir</button>
+                <p id="output-pt-en"></p>
+            </div>
+        
+            <div class="translator-container">
+                <h2>Japonês para Português</h2>
+                <input type="text" class="input-text" id="input-ja-pt" placeholder="Insira o texto em japonês">
+                <button class="translate-button" id="translate-ja-pt" data-source-lang="ja" data-target-lang="pt">Traduzir</button>
+                <p id="output-ja-pt"></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 id="portfolio" class="portfolio">Portfolio Illustration</h2>
+        <!-- Aqui estão as suas imagens do portfólio -->
+        <div class="image-container">
+            <img src="imgs/hoshino aie.jpg" alt="Imagem 1">
+            <img src="imgs/Mirko.jpg" alt="Imagem 2">
+            <img src="imgs/Kugisaki Nobara chrismas.jpg" alt="Imagem 3">
+            <img src="imgs/lady nagant cristmas.jpg" alt="Imagem 4">
+            <img src="imgs/mei mei.jpg" alt="Imagem 5">
+            <img src="imgs/frieren12.jpg" alt="Imagem 6">
+            <img src="imgs/Nobara1.jpg" alt="Imagem 6">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+        <button id="prevBtn">←</button> <!-- Botão para a imagem anterior -->
+        <button id="nextBtn">→</button> <!-- Botão para a próxima imagem -->
+
+    </section>
+
+    <section>
+        <h2 id="portfolio" class="portfolio">Hentai works</h2>
+        <!-- Aqui estão as suas imagens do portfólio -->
+        <div class="image-container">
+            <img src="imgs/beidou x ninguang.jpg" alt="Imagem 1">
+            <img src="imgs/kafka x himeko.jpg" alt="Imagem 2">
+            <img src="imgs/Three some yuri.jpg" alt="Imagem 3">
+            <img src="imgs/toma+18.jpg" alt="Imagem 4">
+
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+        <button id="prevBtn">←</button> <!-- Botão para a imagem anterior -->
+        <button id="nextBtn">→</button> <!-- Botão para a próxima imagem -->
+
+    </section>
+
+    <section id="commission" class="commission">
+        <h2>Commission</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </section>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Em meio aos capítulos entrelaçados de nossas vidas, somos protagonistas de uma narrativa única, onde as
+            páginas se desdobram diante de nossos olhos como um livro inexplorado. Cada escolha, como uma pincelada no
+            quadro da existência, contribui para a obra de arte que estamos constantemente criando. Nos momentos de
+            desafio, descobrimos a força interior que molda nossa jornada, transformando adversidades em oportunidades
+            de crescimento. À medida que cruzamos os cenários variados do tempo, encontramos paisagens de alegria e
+            tristeza, entrelaçadas como fios de uma trama intricada. Na tessitura do destino, as relações se revelam
+            como nós significativos, formando a rica tapeçaria de experiências que nos define. Em nossos corações, ecoam
+            as palavras de uma história em constante evolução, enquanto avançamos, curiosos, na busca contínua de
+            significado e autodescoberta.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através do email@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu Nome - Todos os direitos reservados</p>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/suacodigodeincorporacao.js" crossorigin="anonymous"></script>
+    <script src="language.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.image-container').slick({
+                dots: true, // Adiciona pontos de navegação
+                infinite: true, // Navegação infinita
+                speed: 500, // Velocidade da transição
+                slidesToShow: 3, // Número de slides a serem exibidos
+                slidesToScroll: 1 // Número de slides a serem rolados
+            });
+        });
+    </script>
+
+</body>
+
+</html>
